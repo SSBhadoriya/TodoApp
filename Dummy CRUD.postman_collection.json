@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "4b49c460-b6a1-4209-ab7c-58acb4be8db4",
+		"name": "Dummy CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15148058"
+	},
+	"item": [
+		{
+			"name": "Create a new record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API\",\r\n    \"content\":\"Free Content\",\r\n    \"status\":\"In Progress\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/todos/get",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Record with ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/todos/get/{}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"get",
+						"{}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Record using Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API using postman\",\r\n    \"content\":\"Free Content available\",\r\n    \"status\":\"Resolved\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/todos/update/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Record using Id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API using postman\",\r\n    \"content\":\"Free Content available\",\r\n    \"status\":\"Resolved\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/todos/delete/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
