@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "4b49c460-b6a1-4209-ab7c-58acb4be8db4",
+		"name": "Dummy CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15148058"
+	},
+	"item": [
+		{
+			"name": "Create a new record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API\",\r\n    \"content\":\"Free Content\",\r\n    \"status\":\"In Progress\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/todos/get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Record with ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/todos/get/{}"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Record using Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API using postman\",\r\n    \"content\":\"Free Content available\",\r\n    \"status\":\"Resolved\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos/update/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Record using Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API using postman\",\r\n    \"content\":\"Free Content available\",\r\n    \"status\":\"Resolved\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos/delete/"
+			},
+			"response": []
+		},
+		{
+			"name": "Z Create a new JDBC record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing Java API\",\r\n    \"content\":\"Free Content\",\r\n    \"status\":\"In Progress\",\r\n    \"dateTime\": \"2024-12-16T17:47:15.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos/post"
+			},
+			"response": []
+		},
+		{
+			"name": "Z Get JDBC Record Testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/todos/get/1491"
+			},
+			"response": []
+		},
+		{
+			"name": "Z Get All JDBC Record Testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/todos/getAll"
+			},
+			"response": []
+		},
+		{
+			"name": "Z Update Record using Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing JSON API using POSTMAN API testing tool\",\r\n    \"content\":\"New comment added\",\r\n    \"status\":\"Assigned\",\r\n     \"dateTime\": \"2024-12-16T17:47:15.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos/update/295"
+			},
+			"response": []
+		},
+		{
+			"name": "Z Delete Record using Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing JSON API using POSTMAN API testing tool\",\r\n    \"content\":\"New comment added\",\r\n    \"status\":\"Assigned\",\r\n     \"dateTime\": \"2024-12-16T17:47:15.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos/update/2955"
+			},
+			"response": []
+		},
+		{
+			"name": "Z Delete Multiple Record using Batch",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"id\":101,\r\n    \"title\":\"Testing JSON API using POSTMAN API testing tool\",\r\n    \"content\":\"New comment added\",\r\n    \"status\":\"Assigned\",\r\n     \"dateTime\": \"2024-12-16T17:47:15.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/todos/deleteMultiple/1567,4441,5912"
+			},
+			"response": []
+		}
+	]
+}
